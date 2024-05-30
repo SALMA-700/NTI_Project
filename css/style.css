@@ -1,0 +1,876 @@
+@font-face {
+        font-family: nti ;
+        src: url(../fonts/sans.ttf);
+}
+/*============= general style =============*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: nti;
+    font-weight: 400;
+    
+}
+.container2{
+    width:90% ;
+    margin: auto;
+}
+h2.headerSection{
+    margin: 140px 0;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+h2.headerSection::after{
+    content: "";
+    width: 5%;
+    height:3px ;
+    margin: auto;
+    display: block;
+    background-color: #F29D35;
+    transition: 0.5s;
+    margin-top: 10px;
+}
+h2.headerSection:hover::after{
+    width: 10%;
+}
+h3.headerSection{
+    margin: 140px 0 80px;
+    font-weight: 500;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+h3.headerSection span{
+    font-weight: 600;
+    background: linear-gradient( to right , #F29D35 ,#026e3f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+h6.headerSection{
+    font-size: 25px;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 150px 0 20px;
+    color: #00854b;
+}
+/*============= home section ===========*/
+.home{
+    background-attachment: fixed;
+    background-image: url(../images/wallpaperflare.com_wallpaper\ \(10\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode:overlay ;
+    background-color: rgb(58, 58, 58);   
+    height: 100vh;   
+} 
+.home .container  nav .logo{
+    display: flex;
+    align-items: center;
+    
+
+}
+.home .container  nav .logo .img{
+    width: 100%;
+    margin-right: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.home .container  nav .logo h1{
+    text-transform: uppercase;
+    font-size: 45px;
+    color: #e0e0e0;
+    transition: 0.5s;
+    cursor: pointer;
+
+}
+.home .container  nav .logo:hover  .img{
+    transform: translatex(-10px);
+    
+}
+.home .container nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+}
+.home .container nav {
+    
+    margin-top: 10px;
+    align-items: center;
+    transition: 0s;
+    
+
+}
+.home .container nav  ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin:  0 ;
+    text-align: center;
+    
+
+}
+.home .container nav  ul li{
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+    letter-spacing: 1px;
+    margin: 0 20px;
+    text-transform: capitalize;
+
+}
+.home .container nav  ul li a{
+    text-decoration: none;
+    color: #e2e2e2;
+    font-weight: 500;
+    transition: 1s;
+    border: 2px solid transparent;
+
+
+}
+.home .container nav ul li a::after{
+    content: " ";
+    width: 0%;
+    display: block;
+    height: 3px;
+    background-color: #F29D35;
+}
+.home .container nav ul li a:hover::after{
+    transition: 1s;
+    width: 100%;
+}
+.home .container nav button{
+    padding: 4px 25px;
+    border-radius: 30px;
+    border: none;
+    color: #e0e0e0;
+    text-transform: capitalize;
+    font-weight: 600;
+    background-color: #F29D35;
+    transition: 0.5s;
+
+}
+.home .container nav button:hover{
+    box-shadow: 0 0 8px rgb(177, 177, 177);
+    background-color:#6195e6;
+
+}
+
+/*======== blog post ==========*/
+
+.home .container nav ul .blog ul li{
+    border-style: none;
+    background-color: #00854b;
+    color: #e0e0e0;
+    position: absolute;
+    top:55px;
+    left: 54%;
+    padding: 9px;
+    border-radius: 2px;
+    font-weight: 800;
+    font-size: 13px;
+    opacity: 0;
+    cursor: pointer;
+}
+.home .container ul .blog:hover ul li{
+    opacity: 1;
+    transition: 0.5s;
+}
+
+
+/* ============ main section ==========*/
+.home  .main {
+    text-align: center;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+
+
+}
+.home  .main h3{
+    font-size: 40px;
+    color: #e0e0e0;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    cursor: pointer;
+
+}
+.home  .main p{
+    width:65%;
+    margin: auto;
+    text-align: center;
+    color: #a8a8a8;
+
+}
+
+
+/*============= about section  ==========*/
+main .about{
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+main .about .container .aboutContent{
+    display: flex;
+    justify-content: space-between;
+
+}
+main .about .container .aboutContent .info{
+    width: 45%;
+}
+main .about .container .aboutContent .info h2{
+    text-align: left;
+    margin: 10px 0 50px 0;
+}
+main .about .container .aboutContent .info p{
+    font-size: 18px;
+
+}
+main .about .container .aboutContent .info button{
+    padding: 10px 30px;
+    border: none;
+    border-radius: 20px;
+    text-transform: capitalize;
+    background-color: #00854b;
+    color: #e0e0e0;
+}
+main .about .container .aboutContent .info button:hover{
+    box-shadow: 0 0px  14px 2px #F29D35;
+    background-color:#026e3f ;
+}
+main .about .container .aboutContent .info h2::after{
+    margin-left: 4px;
+}
+main .about .container .aboutContent .info h2:hover::after{
+    width: 20%;
+}
+main .about .container .aboutContent .imgs{
+    width: 45%;
+    margin: auto;
+    align-items: center;
+}
+main .about .container .aboutContent .imgs img {
+    border-radius: 15%;
+    transition: 0.5s;
+    cursor: pointer;
+
+}
+main .about .container .aboutContent .imgs img:hover{
+    scale: 1.1;
+}
+
+/*============= objectives section =============*/
+main .objectives {
+    margin: 180px 10px;
+}
+main .objectives  .objectivesContent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+main .objectives  .objectivesContent .img{
+    width: 45%;
+    align-items: center;
+    margin-top: 85px;
+}
+main .objectives  .objectivesContent .img img{
+    width: 100%;
+}
+main .objectives  .objectivesContent .data{
+    width: 55%;
+}
+main .objectives  .objectivesContent .data h2{
+    text-align:left;
+    margin: 10px 60px 50px 30px;
+}
+main .objectives  .objectivesContent .data h2::after{
+    margin-left: 3px;
+}
+main .objectives  .objectivesContent .data h2:hover::after{
+    width: 20%;
+}
+main .objectives  .objectivesContent .data ul li{
+    list-style: none;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 25px;
+}
+main .objectives  .objectivesContent .data ul li i{
+    margin-right: 10px;
+    padding: 5px;
+    font-size: 20px;
+    color: #05b86a;
+    border: 2px solid #F29D35;
+    border-radius: 50%;
+}
+
+
+/*========== why section ==========*/
+main .whyUs{
+    margin: 10px 0;
+}
+main .whyUs .container2 .whyusContent{
+    display: flex;
+    justify-content: space-between;
+    
+}
+main .whyUs .container2 .whyusContent .data{
+    width: 60%;
+}
+main .whyUs .container2 .whyusContent .data h2{
+    text-align:left;
+    margin: 10px 60px 50px 0px;
+}
+main .whyUs .container2 .whyusContent .data h2::after{
+    margin-left: 3px;
+}
+main .whyUs .container2 .whyusContent .data h2:hover::after{
+    width: 25%;
+}
+main .whyUs .container2 .whyusContent .data button{
+    padding: 10px 30px;
+    margin-top: 60px;
+    text-transform: capitalize;
+    font-size: 20px;
+    color: #e0e0e0;
+    border: none;
+    background-color: #F29D35;
+    border-radius: 15px 0 15px 0;
+    transition: 0.5s;
+
+}
+main .whyUs .container2 .whyusContent .data button:hover{
+    border-radius: 15px;
+    background-color: #00854b;
+    
+}
+main .whyUs .container2 .whyusContent .boxs .box{
+    padding: 50px 0;
+    text-align: center;
+    background-color: #e0e0e0;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+main .whyUs .container2 .whyusContent .boxs .box:hover{
+    box-shadow: 0 2px  10px gray;
+    transform: translateY(-4px);
+}
+main .whyUs .container2 .whyusContent .boxs .box i{
+    font-size: 40px;
+    color: #F29D35;
+}
+main .whyUs .container2 .whyusContent .boxs .box  p{
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: capitalize;
+
+}
+main .whyUs .container2 .whyusContent .boxs .box  p:hover{
+    color:#6195e6 ;
+}
+
+/*============ our team section ==========*/
+main .ourteam {
+    margin: 10px 0 50px;
+}
+main .ourteam .container h3{
+    margin: 1px  0;
+}
+main .ourteam .container .ourContent{
+    display: flex;
+    margin:100px auto 20px ;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+main .ourteam .container .ourContent .box{
+    width: 25%;
+    height: 100%;
+    background-color: #d6d6d6;
+    padding: 15px 20px;
+    filter: none;
+    border-radius: 10px;
+    transition: 1s;
+}
+main .ourteam .container .ourContent .box .img {
+    width: 100%;
+}
+main .ourteam .container .ourContent .box .img img{
+    width: 100%;
+    border-radius: 10px;
+    
+    
+}
+main .ourteam .container .ourContent .box:hover{
+    filter: brightness(60%);
+}
+main .ourteam .container .ourContent .box h3{
+    margin: 10px 0;
+    text-transform: uppercase;
+    color: #222;
+    font-size: 25px;
+    transition: 0.5s;
+}
+main .ourteam .container .ourContent .box:hover h3{
+    color: #6195e6;
+}
+main .ourteam .container .ourContent .box p{
+    text-transform: capitalize;
+    color: #949494;
+}
+
+/*=============== our courses ================*/
+main .ourcourses .container  h6{
+    margin: 180px 0 0px;
+}
+main .ourcourses .container h3{
+    margin: 20px 0  150px;
+}main .ourcourses .container .coursesContent{
+    display: flex;
+}
+main .ourcourses .container .coursesContent .box{
+    align-items: center;
+    background-color: #333;
+    border: 1px solid #f1f0f0;
+    border-radius: 10px;
+    position: relative;
+    padding: 30px  20px;
+    width: 30%;
+    margin: auto;
+    text-align: center;
+    cursor: pointer;   
+    position: relative;
+    z-index: 1;
+    justify-content: space-between;
+    transition: 1s;
+    
+}
+main .ourcourses .container .coursesContent .box::after{
+    content: "";
+    width: 0%;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #dfdede;
+    z-index: -1;
+    transition: 1s;
+}
+main .ourcourses .container .coursesContent .box:hover::after{
+    height: 100%;
+    width: 100%;
+
+}
+main .ourcourses .container .coursesContent .box .top{
+    align-items: center;
+    margin-bottom: 10px;
+}
+main .ourcourses .container .coursesContent .box i{
+    font-size: 40px;
+    margin-right: 10px;
+    color: #F29D35;
+    transition: 0.5s;
+}
+main .ourcourses .container .coursesContent .box h2{
+    text-transform: capitalize;
+    font-size: 25px;
+    transition: 0.5s;
+    color: antiquewhite;
+}
+main .ourcourses .container .coursesContent .box:hover h2{
+    color: #222;
+    
+}
+main .ourcourses .container .coursesContent .box p{
+    color: #999;
+}
+main .ourcourses .container .coursesContent .box:hover i{
+    scale:1.2;
+    color: #6195e6;
+}
+main .ourcourses .container .coursesContent .box button{
+    padding: 10px 25px;
+    border: none;
+    background: linear-gradient( to right ,#00854b ,#F29D35);
+    color: #e0e0e0;
+    text-transform: capitalize;
+    font-weight: 600;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+main .ourcourses .container .coursesContent .box:hover button{
+    background: #6195e6;
+    
+    
+}
+main .ourcourses .container .coursesContent .box button:hover{
+    box-shadow: 0 8px 2px #222;
+}
+
+/*=========== testimonials section ==========*/
+main .test{
+    background-image: url(../images/background2.webp);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    background-color: #1b1b1b;
+    margin: 350px 0 50px;
+    padding: 20px 0 50px;
+}
+main .test .container h2.headerSection{
+    color: #e0e0e0;
+    margin: 20px 0 80px;
+    
+}
+main .test .container .testContent{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+
+}
+main .test .container .testContent .box .img{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+main .test .container .testContent .box .img img{
+    border-radius: 50%;
+    margin-right: 15px;
+    box-shadow:  0 0 3px 3px #00854b;
+    transition: 0.5s;
+    
+}
+main .test .container .testContent .box:last-child img{
+    box-shadow:  0 0 3px 3px #F29D35;
+}
+main .test .container .testContent .box .img h2{
+    color: #6195e6;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+main .test .container .testContent .box .img img:hover{
+    filter: grayscale(60%);
+}
+main .test .container .testContent .box p{
+    color: #a5a5a5;
+    text-align: center;
+    width: 70%;
+    margin: auto;
+}
+
+
+/*============ slider section ===============*/
+main .sliderSection .container{
+    margin-top: 200px;
+
+}
+main .sliderSection .container .data{
+    width: 40%;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: capitalize;
+} 
+main .sliderSection .container .data h2{
+    text-align:left;
+    font-size: 25px;
+    margin: 10px 0px  30px 0px;
+}
+main .sliderSection .container .data h2::after{
+    margin-left: 3px;
+}
+main .sliderSection .container .data h2:hover::after{
+    width: 50%;
+}
+main .sliderSection .container .slider{
+    width: 50%;
+}
+.sliderSection .container{
+    display: flex;
+    
+    justify-content: space-between;
+}
+
+/*============== footer section ===================*/
+
+footer{
+    background-color: #222;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+display:flex;
+justify-content: space-between;
+align-items: center;
+padding-top: 20px;
+margin-top: 150px;
+/* padding:3px 290px; */
+
+
+border-top:20px solid #6195e6;
+
+}
+footer div{
+width: 25%;
+text-align: center;
+
+/* margin-bottom: 900px; */
+margin:0  auto;
+}
+footer  h3.headerSection {
+    margin:20px 0;
+}
+footer  h3.headerSection span{
+font-size: 30px;
+display: inline-block;
+
+}
+footer div ul{
+    padding: 0;
+}
+footer div ul li{
+list-style: none;
+margin-top: 5px;
+letter-spacing: 0.5px;
+
+cursor: pointer;
+font-weight: 600;
+color: aliceblue;
+}
+footer div ul li:hover{
+color: #F29D35;
+
+}
+footer .socialicon a{
+    display: flex;
+    flex-direction: column;
+    width: 40px;
+    text-align: center;
+    padding: 11px ;
+   margin: 10px auto;
+    color: #e0e0e0;
+    background-color: #6195e6;
+    border-radius: 50%;
+    transition: 0.5s;
+    text-decoration: none;
+}
+footer .socialicon a i {
+font-size: 15px;
+
+}
+footer .socialicon a:hover {
+    transform: translateX(-10px);
+    color: #6195e6;
+    background-color: #e0e0e0;
+}
+
+
+
+
+@media ( max-width:990px){
+    .home .container nav .collapse{
+        background-color: #222;
+        z-index: 2;
+        border-radius: 20px;
+        text-align: center;
+        align-items: center;
+        
+    }
+    main .about{
+        width: 100%;
+    }
+    main .about .container .aboutContent {
+        display: wrap;
+        flex-wrap: wrap;
+        width: 100%;
+        
+
+    }
+    main .about .container .aboutContent .info{
+        width: 100%;
+    }
+    main .about .container .aboutContent .imgs{
+        width: 100%;
+        margin-top: 30px;
+        margin: auto;
+        align-items: center;
+
+    }
+    main .about .container .aboutContent .imgs .box{
+        padding: 0;
+        width: 100%;
+    }
+    main .about .container .aboutContent .imgs .box img{
+        padding: 0;
+        width: 100%;
+    }
+    main .about .container .aboutContent .imgs .box2{
+        padding: 0;
+        width: 100%;
+        margin: 0;
+    }
+    main .objectives{
+        width: 100%;
+    }
+    main .objectives  .objectivesContent{
+        display: wrap;
+        flex-wrap: wrap;
+        width: 100%;
+        
+    }
+    main .objectives  .objectivesContent .img{
+        padding: 0;
+        width: 80%;
+        margin: auto;
+    }
+    main .objectives  .objectivesContent .data{
+        width: 100%;
+    }
+    main .objectives  .objectivesContent .boxs{
+        margin-top: 40px;
+        flex-wrap: wrap;
+    }
+    main .whyUs .container2 .whyusContent{
+        display: flex;
+        
+        flex-wrap: wrap;
+    }
+    main .whyUs .container2 .whyusContent .boxs{
+        margin-top: 20px;
+    }
+    main .whyUs .container2 .whyusContent .data {
+        width: 80%;
+        margin: auto;
+    }
+    main .ourteam .container .ourContent {
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        margin: auto;
+    }
+    main .ourteam .container {
+        width: 100%;
+
+    }
+    main .ourteam .container .ourContent{
+        width:100%;
+    }
+    main .ourteam .container .ourContent .box{
+        display: flex;
+        margin: 30px 0;
+        flex-wrap: wrap;
+        width: 45%; justify-content: space-between;
+    }
+    main .ourcourses .container .coursesContent{
+        display: grid;
+        grid-template-columns: repeat(2 ,1fr);
+    }
+    main .ourcourses .container .coursesContent .box{
+        width: 100%;
+    }
+    main .test .container{
+        width: 80%;
+        margin: auto;
+    }
+    main .test .container .testContent .box .img{
+        padding: 10px;
+        margin: 0;
+    }
+    main .test .container .testContent .box p {
+        width: 100%;
+
+    }
+    main .sliderSection .container{
+        display: flex;
+        flex-direction: column;
+    }
+    main .sliderSection .container .data{
+        width: 80%;
+        margin: auto;
+    }
+    main .sliderSection .container .sider{
+        width: 100%;
+        margin: auto;
+        align-items: center;
+    }
+    footer {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    footer div{
+        width: 40%;
+    }
+}
+
+@media ( max-width :  600px){
+    main .whyUs .container2 .whyusContent .boxs{
+        display: grid;
+        grid-template-columns: repeat(1 ,1fr);
+        margin: 0px;
+    }
+    main .whyUs .container2 .whyusContent .boxs .box{
+        width: 100%;
+    }
+    main .objectives  .objectivesContent .boxs .box{
+        display: flex;
+        flex-wrap: wrap; 
+        width: 80%;
+        margin: auto;
+    }
+    main .ourteam .container .ourContent .box{
+        display: flex;
+        margin: 30px 0;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    main .ourcourses .container .coursesContent{
+        display: grid;
+        grid-template-columns: repeat(1 ,1fr);
+    }
+    main .ourcourses .container .coursesContent .box{
+        width: 100%;
+    }
+    main .test .container .testContent{
+        padding: 0;
+        flex-direction: column;
+    }
+    main .test .container .testContent .box{
+        padding: 10px;
+        margin: 0;
+    }
+    main .test .container .testContent .box .img{
+        margin-right: 0px;
+        margin-left: 0;
+    }
+    main .test .container .testContent .box p {
+        width: 100%;
+
+    }
+    footer {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    footer div{
+        width: 80%;
+        margin: auto;
+    }
+
+}
+
+@media ( max-width :  400px){
+    main .test .container .testContent{
+        display: flex;
+        flex-direction: column;
+    }
+}
